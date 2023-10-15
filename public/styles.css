@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.upload-section, .results-section {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#results-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.plagiarized-line {
+    background-color: #f00;
+    color: #fff;
+}
+
+/* Style for added lines in code comparison */
+.added {
+    background-color: #d1ffbd;
+}
+
+/* Style for removed lines in code comparison */
+.removed {
+    background-color: #ffc7c7;
+}
+
+.custom-file-upload {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.custom-file-uploads {
+    cursor: pointer;
+
+    display: inline-block;
+}
+#upload-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.file-container {
+    display: flex;
+}
+
+#upload-files {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#file-input[type="file"] {
+    display: none;
+}
+
+
+.results-section {
+    width: 97%;
+}
+
+
+
+
+
+#results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.result-item {
+    width: 100%; /* Adjust the width as needed */
+    margin-bottom: 10px;
+}
+
+/* Added CSS for plagiarized code container */
+
+
+
+
+
+.result-header {
+    margin-bottom: 10px;
+}
+
+.result-content {
+    margin-bottom: 10px;
+}
+
+.plagiarized-code-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.plagiarized-code1,
+.plagiarized-code2 {
+    flex: 1;
+    overflow-x: auto;
+}
+
+.plagiarized-code-separator {
+    height: 20px;
+    background-color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.plagiarized-code {
+    font-family: monospace;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+}
+
+.plagiarized-code-header {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/* Style for removed lines in code comparison */
+.removed {
+    background-color: #ffc7c7; /* Red color for removed parts */
+    color: #ff0000;
+}
+
+/* Style for added lines in code comparison */
+.added {
+    background-color: #d1ffbd; /* Green color for added parts */
+    color: #008000;
+}
+
+.plagiarized-line {
+    background-color: #f00;
+    color: #fff;
+}
+
+/* Other styles (No changes here) */

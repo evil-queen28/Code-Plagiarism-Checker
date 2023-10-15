@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Plagiarism Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Code Plagiarism Checker</h1>
+</header>
+<main>
+    <section class="upload-section">
+        <h2>Upload Code Files</h2>
+
+        <div class="file-upload">
+            <input type="file" id="file-input" accept=".txt, .cpp, .java" multiple>
+            <label for="file-input" class="custom-file-upload">
+                <i class="fa fa-cloud-upload"></i> Choose Files
+            </label>
+        </div>
+
+        <button id="upload-files-button" class="custom-file-uploads">
+            <i class="fa fa-upload"></i> Upload Files
+        </button>
+
+        <p id="selected-file-count">Selected Files: 0</p>
+        <button id="check-button">Check Plagiarism</button>
+    </section>
+    <section class="results-section">
+        <h2>Results</h2>
+        <div id="results-container"></div>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
