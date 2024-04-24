@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
             formData.append("files", files[i]);
         }
 
-        fetch('/.netlify/functions/checkPlagiarism', {
+        fetch('/.netlify/functions/checkplagiarism.js', {
             method: "POST",
             body: formData,
         })
